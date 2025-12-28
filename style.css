@@ -24,6 +24,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-optical-sizing: auto;
 }
 
 body {
@@ -45,7 +46,8 @@ body {
 
 .side-panel img.hero-img {
     height: 100vh;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .logo-container {
@@ -68,7 +70,7 @@ img.logo {
 
 .odin {
     position: absolute;
-    right: 35%;
+    right: 29%;
     top: 20%;
     color: white;
     font-family: 'Ragna-Runes';
@@ -88,4 +90,141 @@ img.logo {
 
 a {
     color: white;
+}
+
+.main-content {
+    flex: 0 0 65%;
+    padding: 70px 0px 0 40px;
+    background-color: #ebf1f4;
+}
+
+.maincaption {
+    font-family: Cartius;
+    font-weight: bolder;
+    color: #17262d;
+    padding-left: 0;
+}
+
+.call-to-action {
+    font-family: 'Ragna-Runes';
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 2em;
+    color: #17262d;
+    text-align: justify;
+    width: 440px;
+    letter-spacing: 0.1rem;
+}
+
+.sign-up-container {
+    margin-top: 30px;
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 15px 0 0 15px;
+    border-color: #272728;
+    border-style: double; 
+    box-shadow: 0 0 10px 1px rgba(49, 49, 49, 0.3);
+    width: 720px;
+    align-items: center;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Cartius;
+    font-weight: bold;
+    color: #17262d;
+    padding-left: 16px;
+   
+}
+
+label {
+    font-family: 'Cartius';
+    color: #060e11;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+:placeholder-shown {
+    font-family: 'Ragna-Runes';
+    font-size: 10px;
+    letter-spacing: 0.3em;
+}
+
+#phone {
+    font-family: 'Cartius';
+}
+
+fieldset input {
+  width: 90%;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.create-btn {
+    margin: 25px 0 20px 0;
+}
+
+.button {
+    padding: 15px;
+    background-color: #225b70;
+    border-style: none;
+    color: #ebf1f4;
+    font-family: 'Cartius';
+    letter-spacing: 0.3em;
+    border-radius: 12px;
+    font-weight: bolder;
+    transition: transform 0.3s, background-color 0.3s ease-out;
+}
+
+.button:hover {
+    background-color: #805706;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #060e11;
+    font-weight: bolder;
+    transform: translateY(-1px);
+}
+
+p {
+    font-family: 'Erendale';
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.log-in {
+    color: #805706;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+
+input {
+    border-width: 1.5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:not(:placeholder-shown):valid {
+    border-color: #225b70;
+
+}
+
+input[type="password"]:focus:invalid {
+  border-color: red;
 }
