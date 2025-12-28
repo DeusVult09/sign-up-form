@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Erendale';
+    src: url('./assets/fonts/erendale-font/ErendaleDemo-DYR5E.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cartius';
+    src: url('./assets/fonts/cartius-font/CartiusDemoRegular-rvy5A.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ragna-Runes';
+    src: url('./assets/fonts/ragna-runes-font/RagnaRunesPersonalUseRegular-Rp7AV.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Erendale', Arial, sans-serif;
+    color: #455A64;
+    height: 100vh;
+}
+
+.main-container {
+    position: relative; 
+    display: flex;
+}
+
+.side-panel {
+    flex: 0 0 35%;
+    height: 100vh;
+    position: relative;
+}
+
+.side-panel img.hero-img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.logo-container {
+    background: rgba(11, 28, 35, 0.66);
+    position: absolute;
+    top: 20%;
+    height: 20%;
+    z-index: 1;
+    width: 440px;
+}
+
+img.logo {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    z-index: 1;
+}
+
+.odin {
+    position: absolute;
+    right: 35%;
+    top: 20%;
+    color: white;
+    font-family: 'Ragna-Runes';
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.credit {
+    position: absolute;   
+    bottom: 15px;         
+    left: 120px;          
+    font-size: 0.8rem;
+    color: white;
+    font-family: 'Ragna-Runes';  
+    z-index: 2;    
+}
+
+a {
+    color: white;
+}
