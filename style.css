@@ -64,13 +64,13 @@ img.logo {
     height: auto;
     position: absolute;
     top: 15%;
-    left: 25%;
+    left: 20%;
     z-index: 1;
 }
 
 .odin {
     position: absolute;
-    right: 29%;
+    right: 33%;
     top: 20%;
     color: white;
     font-family: 'Ragna-Runes';
