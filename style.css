@@ -45,47 +45,49 @@ body {
 }
 
 .side-panel img.hero-img {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .logo-container {
-    background: rgba(11, 28, 35, 0.66);
     position: absolute;
-    top: 20%;
-    height: 20%;
-    z-index: 1;
+    top: 120px;          
+    left: 0;
     width: 100%;
+    height: 140px;        
+    background: rgba(11, 28, 35, 0.66);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 img.logo {
     width: 70px;
     height: auto;
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    z-index: 1;
+    position: static;
 }
 
 .odin {
-    position: absolute;
-    right: 30%;
-    top: 20%;
+    position: static;
     color: white;
     font-family: 'Ragna-Runes';
     font-size: 62px;
-    font-weight: bold;
 }
 
 .credit {
-    position: absolute;   
-    bottom: 15px;         
-    left: 120px;          
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 0.8rem;
     color: white;
-    font-family: 'Ragna-Runes';  
-    z-index: 2;    
+    font-family: 'Ragna-Runes';
+    z-index: 2;   
 }
 
 a {
@@ -210,10 +212,10 @@ p {
 }
 
 input {
-    border-width: 1.5px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-top: 5px;
+    border-style:none;
 }
 
 input:focus {
@@ -221,10 +223,12 @@ input:focus {
 }
 
 input:not(:placeholder-shown):valid {
-    border-color: #225b70;
+    box-shadow: 0 4px 23px rgb(34, 91, 112);
+
 
 }
 
 input[type="password"]:focus:invalid {
-  border-color: red;
+    box-shadow: 0 4px 23px rgba(255, 0, 0, 0.2);
 }
+
