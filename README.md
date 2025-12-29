@@ -8,4 +8,4 @@
 - Box Model – white space, full-width sections, padding/margin and `box-sizing`
 - Form Validation and Styling – a styled email subscription with simple hover interaction.
 
-Live demo 
+Live demo: https://deusvult09.github.io/sign-up-form/
