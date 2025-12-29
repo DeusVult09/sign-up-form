@@ -124,7 +124,7 @@ a {
 
 fieldset {
     border-radius: 5px;
-    padding: 15px 0 0 15px;
+    padding: 15px 0 15px 15px;
     border-color: #272728;
     border-style: double; 
     box-shadow: 0 0 10px 1px rgba(49, 49, 49, 0.3);
@@ -223,7 +223,7 @@ input:focus {
 }
 
 input:not(:placeholder-shown):valid {
-    box-shadow: 0 4px 23px rgb(34, 91, 112);
+    box-shadow: 0 4px 35px rgb(86, 200, 241);
 
 
 }
